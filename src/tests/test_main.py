@@ -1,5 +1,5 @@
 import pytest
-from src.main import sum, is_greater_than, login
+from src.main import sum, siesmayor, login, resta, siesmenor
 
 
 def test_sum():
@@ -8,8 +8,14 @@ def test_sum():
 def test_sum1():
     assert sum(4, 6) == 10
 
-def test_is_greater_than():
-    assert is_greater_than(3, 2)
+def test_resta():
+    assert resta(1220, 109) == 1111
+
+def testsiesmayor():
+    assert siesmayor(3, 2)
+
+def testsiesmenor():
+    assert siesmenor(1, 8)
 
 #Decorador con valores a añadir en el parametrizador
 @pytest.mark.parametrize(
